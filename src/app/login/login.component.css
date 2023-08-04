@@ -1,0 +1,28 @@
+.login{
+    box-shadow: inset  -3px  -3px 8px #a5a9b1be, inset 5px 5px 12px rgba(0, 0, 0, 0.432);
+    border-radius: 5px; 
+    background-color: rgba(191, 114, 194, 0.918);
+}
+h2{
+    text-align: center;
+}
+#ac1{
+    text-align: center;
+    background-color: rgba(167, 38, 139, 0.363);
+    color: black;
+}
+#pc1{
+    text-align: center;
+    background-color: rgba(170, 39, 142, 0.363);
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.acc{
+    text-align: center;
+}
+.pass{
+    text-align: center;
+}
+img{
+    
+}

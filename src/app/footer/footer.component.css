@@ -1,0 +1,15 @@
+.footer{
+    background-color: rgba(237, 237, 241, 0.918);
+    text-align: center;
+    color: black;
+    font-size: smaller;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: fixed;
+    bottom: 0%;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+
+}

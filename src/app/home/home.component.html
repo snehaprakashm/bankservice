@@ -1,0 +1,173 @@
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<input type="checkbox" id="check">
+<label for="check">
+  <i class="fas fa-bars" id="btn"></i>
+  <i class="fa-solid fa-rectangle-xmark" id="cancel" style="color: #000000;"></i>
+</label>
+
+
+<div class="sidebar">
+  <header>MY HOME</header>
+  <ul>
+    <li><a href="#">View Profile</a></li>
+    <li><a href="#">Balance Enquiry</a></li>
+    <li><a href="#">Money Transfer</a></li>
+    <li><a href="#"> Account Statement</a></li>
+    <li><a href="#">Logout</a></li>
+    <li><a href="#">Delete Account</a></li>
+  </ul>
+
+</div> -->
+
+
+
+<nav class="navbar navbar-expand-lg sticky-top " style="background-color:white ;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"> <img src="./images/download (1).jpg" style="width:270px" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <!-- <a class="nav-link " href="#" aria-current="page" href="#"> <strong>
+              HOME</strong></a> -->
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " data-bs-toggle="modal" data-bs-target="#exampleModal1"><strong>View Profile</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal"><strong>Balance Check</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><strong>Money Transfer</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><strong>Account Statement</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><strong>LogOut</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><strong>Delete Account</strong></a>
+        </li>
+
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+      aria-current="true" aria-label="Slide 1"></button>
+    
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="lm1" src="https://i.postimg.cc/PJwkkWfb/senior-father-with-adult-son-in-family-concept-banner-background-with-copy-space-elderly-old-man-per.jpg" class="d-block w-100 h-25" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <div class="hh1">
+          <h1>Kerala's No.1 Bank is YOURS</h1>
+         
+        </div>
+        
+      </div>
+    </div>
+  
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Balance Enquiry </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h2>HI ANUSREE</h2>
+            <img src="https://i.postimg.cc/rsbMLfj4/vector-bank-icon-png-302746-removebg-preview.png" alt="">
+
+            <div class="details">Your Account number is 1000 <br>
+             Balance Amount is 100000</div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Money trasfer -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body " style="background-color: rgba(0, 0, 0, 0.637);">
+       
+    
+          <img src="https://i.postimg.cc/bN4zJ0ST/Money-Transfer-1-removebg-preview.png" alt="" style="width: 70%;">
+      
+          <form  class="bckfrm mt-1 p-3 "action="">
+            <div class="mt-1 p-2" style="background-color: ;">
+                <!-- <label for="u1">Username</label> -->
+                <input type="text" id="u1" placeholder="Recipient Account Name" class="form-control">
+            </div>
+            
+            <div class="mt-1 p-2">
+                <!-- <label for="a1">Account Number</label> -->
+                <input type="text" id="a1" placeholder="Amount to transfer" class="form-control">
+            </div>
+        
+    <div class="mt-1 p-2">
+        <!-- <label for="p1">Set Password</label>  -->
+        <input type="password"  id="p1" placeholder=" Password" class="form-control">
+    </div>
+        
+   
+    
+    <div class="mt-1 w-75 p-4 text-center ">
+        <button type="button"  class="subbtn " style="border-radius: 5px; background-color: rgba(141, 135, 135, 0.719); color: white; ">Transfer</button>
+        
+    </div>
+    
+    
+    </form>
+        
+      </div>
+    </div>
+
+
+
+
+    <!-- profile view -->
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel1">Profile View</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-2" style="background-color: blanchedalmond;color: black ; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+        <img src="https://i.postimg.cc/0NcTr38h/flat-business-man-user-profile-avatar-icon-vector-4333097-removebg-preview.png" style="height:350px;" alt=""> <br>
+         <button   class="usrbtn p-3" style="border-radius: 5px; ">USER : ANUSREE</button> <br><br>
+         <button class="usrbtn p-3" style="border-radius: 5px; ">ACCOUNT NUMBER : 1000</button>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
