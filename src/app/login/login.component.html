@@ -8,16 +8,16 @@
 
             <div class=" acc mt-3 p-2">
                 <!-- <label for="ac1">Account Number</label> -->
-                <input (change)="acnoChange($event)" type="text" id="ac1" name="uname" [placeholder]="data2"  class="form-control ">
+                <input  #acno type="text" id="ac1" name="uname" [placeholder]="data2"  class="form-control ">
             </div>
             
             <div class=" pass mt-2 p-2">
                 <!-- <label for="pc1">Password</label>  -->
-                <input (change)="passChange($event)" type="password"  id="pc1" name="password"  placeholder= "Password" class="form-control">
+                <input #psw type="password"  id="pc1" name="password"  placeholder= "Password" class="form-control">
             </div>
             
             <div class="mt-3 p-2 ">
-                <button (click)="login()"  type="submit" id="loginbtn" class="btn btn-success w-100"> login</button> <br> <br>
+                <button (click)="login(acno,psw)"  type="button" id="loginbtn" class="btn btn-success w-100"> login</button> <br> <br>
                 
                 
             
