@@ -8,22 +8,22 @@
 
             <div class=" acc mt-3 p-2">
                 <!-- <label for="ac1">Account Number</label> -->
-                <input  #acno type="text" id="ac1" name="uname" [placeholder]="data2"  class="form-control ">
+                <input [(ngModel)]="acno" type="text" id="ac1" name="uname" [placeholder]="data2"  class="form-control ">
             </div>
             
             <div class=" pass mt-2 p-2">
                 <!-- <label for="pc1">Password</label>  -->
-                <input #psw type="password"  id="pc1" name="password"  placeholder= "Password" class="form-control">
+                <input  [(ngModel)]="psw" type="password"  id="pc1" name="password"  placeholder= "Password" class="form-control">
             </div>
             
             <div class="mt-3 p-2 ">
-                <button (click)="login(acno,psw)"  type="button" id="loginbtn" class="btn btn-success w-100"> login</button> <br> <br>
+                <button (click)="login()"  type="submit" id="loginbtn" class="btn btn-success w-100"> login</button> <br> <br>
                 
                 
             
             </div>
             <div class="register link" >
-            <p>Dont have an account?</p><a  href=""> Create Account</a>
+            <p>Dont have an account?</p><a  routerLink="signup"> Create Account</a>
           </div>
 
            
